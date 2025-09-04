@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharath G - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0;
+    }
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    .info, .skills, .education, .projects {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 5px 0;
+    }
+    .skills span {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 20px;
+    }
+    /* Button Hover */
+    .contact-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact-btn:hover {
+      background: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bharath G</h1>
+    <p>Frontend Developer | B.Sc Computer Science</p>
+    <p>📧 gb12322006@gmail.com | 📞 6385685677</p>
+    <p>📍 Villupuram | DOB: 31.07.2006</p>
+  </header>
+
+  <div class="container">
+    <section class="info">
+      <h2>About Me</h2>
+      <p>I am a passionate Frontend Developer with knowledge in HTML, CSS, and JavaScript. I love creating responsive and user-friendly websites. Currently pursuing B.Sc in Computer Science.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Sc Computer Science</strong> - Ongoing</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#">Portfolio Resume Website</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <button class="contact-btn" onclick="showContact()">Show Contact Details</button>
+      <p id="contact-info" style="display:none;">Email: gb12322006@gmail.com | Phone: 6385685677</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Bharath G | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showContact() {
+      document.getElementById("contact-info").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
